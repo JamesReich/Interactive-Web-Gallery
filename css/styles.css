@@ -7,11 +7,12 @@ h1{
 
 }
 
-.search-b, .h1-container{
+.search-b{
 
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 10%;
 
 }
 
@@ -46,10 +47,18 @@ input[type="search"]{
 a img{
 
     border-radius: 5px;
-    border: 2px solid rgb(70, 86, 97);
     width: auto;
     height: auto;
     max-width: 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: 0.3s cubic-bezier(.46,-0.59,.55,1.5);
+
+}
+
+a img:hover{
+
+    transform: scale(1.1) translateY(-15px);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
 }
 
