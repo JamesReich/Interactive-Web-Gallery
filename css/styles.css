@@ -56,7 +56,7 @@ input:focus{
 
     width: 65vw;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     grid-auto-rows: auto;
     grid-gap: 20px;
     margin: 10px auto;
@@ -73,7 +73,7 @@ a img{
     max-width: 100%;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     transition: 0.3s cubic-bezier(.46,-0.59,.55,1.5);
-
+    list-style-type: none;
 }
 
 a img:hover{
@@ -83,10 +83,16 @@ a img:hover{
 
 }
 
+a, ul, ol{
+
+    list-style-type: none;  
+
+}
 
 
 
-@media screen and (min-width: 768px) {
+
+/* @media screen and (min-width: 768px) {
 
     .gallery{
 
@@ -116,6 +122,6 @@ a img:hover{
     
     }
     
-}
+} */
 
 
